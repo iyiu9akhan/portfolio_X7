@@ -8,3 +8,5 @@ export default defineConfig({
   plugins: [react(),tailwindcss()],
   base: "/portfolio_X7/",
 });
+
+

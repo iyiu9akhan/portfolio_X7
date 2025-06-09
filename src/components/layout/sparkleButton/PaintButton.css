@@ -1,0 +1,69 @@
+.drip-container {
+  position: relative;
+  filter: url(#goo);
+  /* padding-bottom: 150px; */
+}
+
+.paint-button {
+  position: relative;
+  padding: 16px 32px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #00674F;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: visible;
+}
+
+.button-text {
+  position: relative;
+  z-index: 20;
+}
+
+.drip {
+  position: absolute;
+  bottom: 0;
+  width: 10px;
+  height: 0;
+  background: #00674F;
+  border-radius: 0 0 10px 10px;
+  animation: drip-fall 4s infinite ease-in;
+  z-index: 5;
+}
+
+@keyframes drip-fall {
+  0% {
+    height: 0;
+    transform: translateY(0);
+    opacity: 0;
+  }
+  20% {
+    height: 10px;
+    opacity: 0.8;
+  }
+  40% {
+    height: 20px;
+    opacity: 1;
+  }
+  60% {
+    height: 30px;
+  }
+  80% {
+    height: 40px;
+    opacity: 0.8;
+  }
+  100% {
+    height: 50px;
+    transform: translateY(50px);
+    opacity: 0;
+  }
+}
+
+.drip-1 { left: 15%; animation-delay: 0s; }
+.drip-2 { left: 50%; animation-delay: 1s; }
+.drip-3 { left: 85%; animation-delay: 2s; }
+.drip-4 { left: 35%; animation-delay: 3s; }
+.drip-5 { left: 65%; animation-delay: 4s; }
