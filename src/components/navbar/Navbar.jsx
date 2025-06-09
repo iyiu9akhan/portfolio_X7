@@ -2,8 +2,9 @@ import React from "react";
 import Container from "../layout/Container";
 import logo from "../../assets/logo.png";
 import logo_two from "../../assets/logo_two.png";
+import Button from "../layout/button";
 
-const navbar_list = ["home", "services", "projects", "contact"];
+const navbar_list = ["home", "services", "projects", "contact", "blog"];
 
 function Navbar() {
   return (
@@ -37,7 +38,7 @@ function Navbar() {
             </ul>
           </div>
           <div>
-            <button>download cv</button>
+            <Button className="py-[10px] px-[20px]">Download CV</Button>
           </div>
         </div>
       </Container>
