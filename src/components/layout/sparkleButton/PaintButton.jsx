@@ -13,7 +13,6 @@ const PaintButton = () => {
         <div className="drip drip-5"></div>
       </button>
 
-      {/* Gooey effect filter */}
       <svg width="0" height="0">
         <filter id="goo">
           <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />

@@ -11,7 +11,7 @@ const navbar_list = [
   "home",
   "skills",
   "projects",
-  "experience",
+  "experiences",
   "insights",
   "contact",
 ];
@@ -47,15 +47,15 @@ function Navbar() {
               />
 
               <span
-                className="ml-1 mb-8"
+                className="ml-3 mb-1"
                 style={{
                   color: "#00674F",
-                  fontSize: "150px",
-                  fontFamily: "Sacramento",
+                  fontSize: "40px",
+                  fontFamily: "Noto Sans Georgian",
                   lineHeight: "72px",
                 }}
               >
-                .
+                ;
               </span>
             </div>
           </div>

@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap"); /* logo font */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"); /* primary text font */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap"); /* semi-colon font */
 @import "tailwindcss";
 
 @theme {
-    --font-logo:"Sacramento", cursive;
-    --font-primary: "Quicksand", sans-serif;
+  --font-logo: "Sacramento", cursive;
+  --font-semiColon: "Noto Sans Georgian", sans-serif;
+  --font-primary: "Quicksand", sans-serif;
 }
-
