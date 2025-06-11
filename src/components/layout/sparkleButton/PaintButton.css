@@ -16,7 +16,9 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: visible;
 }
-
+.paint-button .errorPage {
+  background: #b91c1c; /* example red tone */
+}
 .button-text {
   position: relative;
   z-index: 20;

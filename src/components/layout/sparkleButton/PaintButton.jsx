@@ -1,16 +1,21 @@
-import React from 'react';
-import './PaintButton.css';
+import React from "react";
+import "./PaintButton.css";
 
-const PaintButton = () => {
+const PaintButton = ({ children, className="", color="" }) => {
   return (
     <div className="drip-container">
-      <button className="paint-button">
-        <span className="button-text">Let’s Collaborate</span>
-        <div className="drip drip-1"></div>
-        <div className="drip drip-2"></div>
-        <div className="drip drip-3"></div>
-        <div className="drip drip-4"></div>
-        <div className="drip drip-5"></div>
+      <button
+        className={`paint-button ${className}`}
+        style={{ backgroundColor: color }}
+      >
+        <span className={`button-text ${className} capitalize`}>
+          {children}
+        </span>
+        <div className="drip drip-1" style={{ backgroundColor: color }}></div>
+        <div className="drip drip-2" style={{ backgroundColor: color }}></div>
+        <div className="drip drip-3" style={{ backgroundColor: color }}></div>
+        <div className="drip drip-4" style={{ backgroundColor: color }}></div>
+        <div className="drip drip-5" style={{ backgroundColor: color }}></div>
       </button>
 
       <svg width="0" height="0">

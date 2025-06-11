@@ -4,7 +4,8 @@ import logo from "../../assets/logo.png";
 import logo_two from "../../assets/logo_two.png";
 import Button from "../layout/button";
 import { TypeAnimation } from "react-type-animation";
-import SparkleButton from "../layout/sparkleButton/PaintButton";
+import PaintButton from "../layout/sparkleButton/PaintButton";
+// import SparkleButton from "../layout/sparkleButton/PaintButton";
 const CURSOR_CLASS_NAME = "custom-type-animation-cursor";
 
 const navbar_list = [
@@ -22,9 +23,10 @@ function Navbar() {
       <Container>
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-5 h-[62px] cursor-pointer">
-            {/* <img src={logo} alt="navbar logo" className="h-[25px]" /> */}
-            <img src={logo_two} alt="navbar logo_two" className="h-full" />
-            {/* <p className="font-logo text-[72px] leading-[72px]">sameerkhan</p> */}
+            {/* <img src={logo_two} alt="navbar logo_two" className="h-full" /> */}
+            <div className="h-[75px] w-[75px] bg-[#00674F] rounded-[15px]">
+              <p className="">m</p>
+            </div>
             <div className="flex items-center h-full">
               <TypeAnimation
                 cursor={false}
@@ -81,7 +83,8 @@ function Navbar() {
 
             <div className="nav-actions">
             {/* <Button className="py-[10px] px-[20px] font-primary font-medium">Let’s Collaborate</Button> */}
-              <SparkleButton>Let's Collaborate</SparkleButton>
+              {/* <SparkleButton>Let's Collaborate</SparkleButton> */}
+              <PaintButton>Let's Collaborate</PaintButton>
             </div>
           </div>
         </div>

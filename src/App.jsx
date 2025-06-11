@@ -3,6 +3,8 @@ import { useState } from 'react'
 // import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/navbar/Navbar'
+import ErrorPage from './components/layout/errorPage/ErrorPage'
+import Banner from './components/banner/Banner'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,6 +12,8 @@ function App() {
   return (
     <>
       <Navbar/>
+      <Banner></Banner>
+      {/* <ErrorPage></ErrorPage> */}
     </>
   )
 }
