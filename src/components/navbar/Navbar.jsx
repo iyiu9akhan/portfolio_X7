@@ -23,16 +23,15 @@ function Navbar() {
       <Container>
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-5 h-[62px] cursor-pointer">
-            {/* <img src={logo_two} alt="navbar logo_two" className="h-full" /> */}
-            <div className="h-[75px] w-[75px] bg-[#00674F] rounded-[15px]">
-              <p className="">m</p>
+            <div className="h-[75px] w-[75px] bg-myGreen rounded-[12px] flex items-center justify-center ">
+              <p className="font-m text-[#FFFFF0] text-[90px] rotate-[108deg] transform scale-x-[-1] mt-[10px] ml-[10px]">M</p>
             </div>
-            <div className="flex items-center h-full">
+            <div className="flex items-center h-full font-logo">
               <TypeAnimation
                 cursor={false}
                 style={{
                   fontSize: "60px",
-                  fontFamily: "Sacramento",
+                  // fontFamily: "Sacramento",
                   lineHeight: "60px",
                 }}
                 className={CURSOR_CLASS_NAME}
@@ -49,9 +48,9 @@ function Navbar() {
               />
 
               <span
-                className="ml-3 mb-1"
+                className="ml-3 mb-1 text-myGreen"
                 style={{
-                  color: "#00674F",
+                  // color: "#00674F",
                   fontSize: "40px",
                   fontFamily: "Noto Sans Georgian",
                   lineHeight: "72px",
@@ -72,7 +71,7 @@ function Navbar() {
              before:absolute before:opacity-0 before:-translate-x-5 before:transition-all before:duration-300
              after:absolute after:opacity-0 after:translate-x-5 after:transition-all after:duration-300
              group-hover:before:content-['{'] group-hover:before:opacity-100 group-hover:before:-translate-x-3
-             group-hover:after:content-['}'] group-hover:after:opacity-100 group-hover:after:translate-x-2"
+             group-hover:after:content-['}'] group-hover:after:opacity-100 group-hover:after:translate-x-2 group-hover:before:text-myOrange group-hover:after:text-myOrange"
                     >
                       {item}
                     </a>
@@ -84,7 +83,7 @@ function Navbar() {
             <div className="nav-actions">
             {/* <Button className="py-[10px] px-[20px] font-primary font-medium">Let’s Collaborate</Button> */}
               {/* <SparkleButton>Let's Collaborate</SparkleButton> */}
-              <PaintButton>Let's Collaborate</PaintButton>
+              <PaintButton className="text-primary">Let's Collaborate</PaintButton>
             </div>
           </div>
         </div>

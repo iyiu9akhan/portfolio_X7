@@ -8,7 +8,7 @@
   padding: 16px 32px;
   font-size: 1rem;
   font-weight: bold;
-  background: #00674F;
+  background: var(--color-myGreen);
   color: white;
   border: none;
   border-radius: 8px;
@@ -29,7 +29,7 @@
   bottom: 0;
   width: 10px;
   height: 0;
-  background: #00674F;
+  background: var(--color-myGreen);
   border-radius: 0 0 10px 10px;
   animation: drip-fall 4s infinite ease-in;
   z-index: 5;
