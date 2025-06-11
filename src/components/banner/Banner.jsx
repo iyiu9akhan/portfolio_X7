@@ -11,7 +11,7 @@ function Banner() {
     <div className="bg-[#FFFFF0] pt-[70px] pb-[200px]">
       <Container>
         <div className="flex justify-center items-center ">
-          <div className="relative before:content-[''] before:absolute before:bottom-0 before:left-[21%] before:w-[45%] before:border-2 before:rounded before:border-[#2E2E2E] before:translate-y-2">
+          <div className="relative before:content-[''] before:absolute before:bottom-0 before:left-[21%] before:w-[45%] before:border-2 before:rounded before:border-[#2E2E2E] before:translate-y-2 select-none">
             <img
               src={banner_img}
               alt="banner_img"
@@ -32,18 +32,16 @@ function Banner() {
               <h1 className="font-primary capitalize font-bold text-[50px] text-myOrange">
                 sameer khan.
               </h1>
-              <p className="font-primary text-[#303030] font-medium text-base -mt-3">
+              <p className="font-primary text-[#303030] font-medium text-base -mt-3 ">
                 username : iyiu9akhan
               </p>
             </div>
-            <div className="absolute bottom-[45px] -right-[415px] w-[400px]">
+            <div className="absolute bottom-[10px] -right-[415px] w-[400px]">
               <p className="font-primary font-medium text-base text-justify leading-6.5">
                 <span className="text-myOrange font-black text-[29px] leading-0">
                   "
                 </span>
-                MERN Stack Developer | Crafting full-stack web applications with
-                React, Express.js Node.js & MongoDB | Cloud enthusiast | Clean
-                Coder | Turning ideas into seamless digital experiences.
+                In Progress : MERN Stack Developer  | Currently mastering the MERN stack through hands-on projects using  React, Node, Express & MongoDB | Cloud enthusiast | Turning ideas into seamless digital experiences.
                 <span className="text-myOrange font-black text-[29px] leading-0">
                   "
                 </span>
