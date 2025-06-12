@@ -12,8 +12,9 @@
   --font-semiColon: "Noto Sans Georgian", sans-serif;
   --font-m: "Grechen Fuemen", cursive;
   --font-primary: "Quicksand", sans-serif;
-  --font-banner:"Bad Script", cursive;
+  --font-designFirst:"Bad Script", cursive;
 
   --color-myGreen: #00674F;
   --color-myOrange: #FF9D57;
+  --color-myBG: #FFFFF0;
 }

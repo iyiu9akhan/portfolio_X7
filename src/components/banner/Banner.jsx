@@ -4,11 +4,18 @@ import banner_img from "../../assets/banner.png";
 import arrow_one from "../../assets/arrow_one.png";
 import arrow_two from "../../assets/arrow_two.png";
 import ShinyText from "../../../reactBiteAnimation/ShinyText/ShinyText";
-// import ShinyText from "./ShinyText";
+import { ImLinkedin } from "react-icons/im";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { SiGmail } from "react-icons/si";
+import { FaGithubSquare } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa6";
 
 function Banner() {
   return (
-    <div className="bg-[#FFFFF0] pt-[70px] pb-[200px]">
+    <div className="bg-myBG pt-[70px] pb-[200px]">
       <Container>
         <div className="flex justify-center items-center ">
           <div className="relative before:content-[''] before:absolute before:bottom-0 before:left-[21%] before:w-[45%] before:border-2 before:rounded before:border-[#2E2E2E] before:translate-y-2 select-none">
@@ -41,22 +48,90 @@ function Banner() {
                 <span className="text-myOrange font-black text-[29px] leading-0">
                   "
                 </span>
-                In Progress : MERN Stack Developer  | Currently mastering the MERN stack through hands-on projects using  React, Node, Express & MongoDB | Cloud enthusiast | Turning ideas into seamless digital experiences.
+                In Progress : MERN Stack Developer | Currently mastering the
+                MERN stack through hands-on projects using React, Node, Express
+                & MongoDB | Cloud enthusiast | Turning ideas into seamless
+                digital experiences.
                 <span className="text-myOrange font-black text-[29px] leading-0">
                   "
                 </span>
               </p>
             </div>
             <div className="absolute -right-[80px] -bottom-[190px]">
-              <p className="font-banner capitalize text-[45px] -mb-8 text-myOrange">
+              <p className="font-designFirst capitalize text-[45px] -mb-8 text-myOrange">
                 clean
               </p>
               <p className="capitalize ml-9 text-[55px] font-primary font-black">
                 <div className="flex items-center">
-                  <ShinyText text="code" speed={3} />
-                   <span style={{ color: "#FF9D57", fontSize: "30px", fontWeight: "bold" }} className="mt-11 ml-2">•</span>
+                  <ShinyText text="coder" speed={3} />
+                  <span
+                    style={{
+                      color: "#FF9D57",
+                      fontSize: "30px",
+                      fontWeight: "bold",
+                    }}
+                    className="mt-11 ml-2"
+                  >
+                    •
+                  </span>
                 </div>
               </p>
+            </div>
+            <div className="absolute -right-[290px] top-[20px] flex justify-between gap-3 items-center">
+              <div className="flex flex-col gap-3 items-center">
+                <a href="#">
+                  <ImLinkedin
+                    size={35}
+                    className="text-[#0072b1] cursor-pointer"
+                  />
+                </a>
+                <a href="https://github.com/iyiu9akhan" target="_blank">
+                  <FaGithubSquare size={40} className="cursor-pointer" />
+                </a>
+              </div>
+              <div className="flex flex-col gap-3 items-center">
+                <a href="https://x.com/iyiu9akhan" target="_blank">
+                  <FaSquareXTwitter size={40} className="cursor-pointer" />
+                </a>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=iyiu9akhan@mail.com"
+                  target="_blank"
+                >
+                  <SiGmail
+                    size={40}
+                    className="text-[#EA4335] cursor-pointer"
+                  />
+                </a>
+              </div>
+            </div>{" "}
+            <div className="absolute -left-[260px] -bottom-[80px] flex justify-between gap-3 items-center">
+                <a href="#">
+                  <SiMongodb
+                    size={40}
+                    className="text-[#3FA037] cursor-pointer"
+                  />
+                </a>
+                <a href="https://github.com/iyiu9akhan" target="_blank">
+                  <SiExpress
+                    size={40}
+                    className="cursor-pointer text-[#303030]"
+                  />
+                </a>
+                <a href="https://x.com/iyiu9akhan" target="_blank">
+                  <FaReact
+                    size={40}
+                    className="cursor-pointer  text-[#61DBFB]"
+                  />
+                </a>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=iyiu9akhan@mail.com"
+                  target="_blank"
+                >
+                  <FaNodeJs
+                    size={40}
+                    className="text-[#68A063] cursor-pointer"
+                  />
+                </a>
             </div>
           </div>
         </div>

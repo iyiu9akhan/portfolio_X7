@@ -27,8 +27,8 @@ const ShinyText = ({ text, speed = 2.5, className = "" }) => {
           animationDuration: animationDuration,
           animationTimingFunction: "linear",
           animationIterationCount: "infinite",
-          pointerEvents: "none", // allow clicks through the shine
-          mixBlendMode: "screen", // blend so it lightens text below
+          pointerEvents: "none",
+          mixBlendMode: "screen", 
         }}
       />
 
