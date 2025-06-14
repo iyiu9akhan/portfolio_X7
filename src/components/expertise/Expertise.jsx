@@ -54,7 +54,7 @@ function Expertise() {
                       before:blur-[19px] before:z-[1] before:animate-[spin_9s_linear_infinite] before:origin-center
                     "
               >
-                <div className="relative w-full h-full bg-[#F8F5E9] rounded-[28px] flex flex-col justify-around items-center font-bold text-[18px] z-[2]">
+                <div className="relative w-full h-full bg-[#F8F5E9] rounded-[28px] flex flex-col justify-evenly items-center font-bold text-[18px] z-[2]">
                   <div className="h-[90px] w-[90px] bg-[#F0DB4F] relative rounded-[12px]">
                     <p className="uppercase text-[50px] font-primary font-bold absolute right-[6px] bottom-[6px] leading-[50px]">
                       js
