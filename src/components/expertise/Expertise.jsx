@@ -2,13 +2,15 @@ import React from "react";
 import Container from "../layout/Container";
 import expertiseIcon from "../../assets/expertise_one.png";
 import { IoArrowRedoSharp } from "react-icons/io5";
+import arrow_three from "../../assets/arrow_three.png";
+
 
 function Expertise() {
   return (
-    <div className="py-[100px] bg-myBG">
+    <div className="pt-[100px] pb-[500px] bg-myBG">
       <Container>
         <div>
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center relative z-999">
             <div>
               <p className="capitalize font-primary font-medium text-[35px] text-myOrange">
                 skills & tools i’ve
@@ -35,6 +37,7 @@ function Expertise() {
               </div>
             </div>
           </div>
+          <img src={arrow_three} alt="arrow_three" className="ml-[315px] -mt-[30px]"/>
         </div>
       </Container>
     </div>
