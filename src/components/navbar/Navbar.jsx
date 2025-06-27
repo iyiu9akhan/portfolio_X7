@@ -24,7 +24,9 @@ function Navbar() {
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-5 h-[62px] cursor-pointer">
             <div className="h-[75px] w-[75px] bg-myGreen rounded-[12px] flex items-center justify-center ">
-              <p className="font-m text-myBG text-[90px] rotate-[108deg] transform scale-x-[-1] mt-[10px] ml-[10px]">M</p>
+              <p className="font-m text-myBG text-[90px] rotate-[108deg] transform scale-x-[-1] mt-[10px] ml-[10px]">
+                M
+              </p>
             </div>
             <div className="flex items-center h-full font-logo">
               <TypeAnimation
@@ -49,7 +51,6 @@ function Navbar() {
               <span
                 className="ml-3 mb-1 text-myGreen"
                 style={{
-                  // color: "#00674F",
                   fontSize: "40px",
                   fontFamily: "Noto Sans Georgian",
                   lineHeight: "72px",
@@ -80,9 +81,9 @@ function Navbar() {
             </div>
 
             <div className="nav-actions">
-            {/* <Button className="py-[10px] px-[20px] font-primary font-medium">Let’s Collaborate</Button> */}
-              {/* <SparkleButton>Let's Collaborate</SparkleButton> */}
-              <PaintButton className="text-primary">Let's Collaborate</PaintButton>
+              <PaintButton className="text-primary">
+                Let's Collaborate
+              </PaintButton>
             </div>
           </div>
         </div>
