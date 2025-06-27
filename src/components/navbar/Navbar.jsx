@@ -31,7 +31,6 @@ function Navbar() {
                 cursor={false}
                 style={{
                   fontSize: "60px",
-                  // fontFamily: "Sacramento",
                   lineHeight: "60px",
                 }}
                 className={CURSOR_CLASS_NAME}
