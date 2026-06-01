@@ -21,7 +21,7 @@ function Expertise() {
               <p className="capitalize font-primary font-medium text-[35px] text-myOrange">
                 skills & tools i’ve
               </p>
-              <div className="flex items-center ml-9">
+              <div className="flex items-center ml-8">
                 <img
                   src={expertiseIcon}
                   alt="heading_icon"
@@ -45,16 +45,12 @@ function Expertise() {
           </div>
           <div className="">
             <div className="grid gap-[10px] w-full grid-cols-5 auto-rows-[200px]">
-              <div
-                className="
-                      relative bg-myBG rounded-[30px] row-span-2 p-[4px] overflow-hidden 
+              <div className="relative bg-myBG rounded-[30px] row-span-2 p-[4px] overflow-hidden 
                       transition-all duration-300 origin-center hover:scale-105 hover:shadow-[0_10px_30px_rgba(240,219,79,0.3)]
                       before:content-[''] before:absolute before:top-[-40%] before:left-[-40%] before:w-[180%] before:h-[180%] 
                       before:rounded-full before:bg-[conic-gradient(from_0deg,transparent_0deg,transparent_100deg,rgba(240,219,79,0.7)_100deg,rgba(240,219,79,1)_140deg,rgba(240,219,79,0.7)_180deg,transparent_180deg,transparent_360deg)] 
-                      before:blur-[19px] before:z-[1] before:animate-[spin_9s_linear_infinite] before:origin-center
-                    "
-              >
-                <div className="relative w-full h-full bg-[#F8F5E9] rounded-[28px] flex flex-col justify-evenly items-center font-bold text-[18px] z-[2]">
+                      before:blur-[19px] before:z-[1] before:animate-[spin_9s_linear_infinite] before:origin-center">
+                <div className="relative w-full h-full bg-[#F8F5E9] rounded-[27px] flex flex-col justify-evenly items-center font-bold text-[18px] z-[2]">
                   <div className="h-[90px] w-[90px] bg-[#F0DB4F] relative rounded-[12px]">
                     <p className="uppercase text-[50px] font-primary font-bold absolute right-[6px] bottom-[6px] leading-[50px]">
                       js
@@ -74,16 +70,20 @@ function Expertise() {
               <div className="bg-[#F8F5E9] rounded-[10px] flex items-center justify-center"></div>
               <div className="bg-[#F8F5E9] rounded-[10px] row-span-2"></div>
               <div className="bg-[#F8F5E9] rounded-[10px]"></div>
-              <div className="bg-[#F8F5E9] rounded-[10px] col-span-2 flex justify-center items-center gap-5">
-                <div>
-                  <SiTailwindcss color="#06B6D4" size={66} />
-                </div>
-                <div>
-                  <p className="font-primary font-medium text-[66px]">
-                    tailwindcss
-                  </p>
+
+              <div className="relative col-span-2">
+                <div className="relative h-full w-full bg-[#F8F5E9] rounded-[27px]  flex justify-center items-center gap-5 ">
+                  <div>
+                    <SiTailwindcss color="#06B6D4" size={66} />
+                  </div>
+                  <div>
+                    <p className="font-primary font-medium text-[66px]">
+                      tailwindcss
+                    </p>
+                  </div>
                 </div>
               </div>
+
               <div className="bg-[#F8F5E9] rounded-[10px] flex items-center justify-center">
                 <SiHtml5 size={90} color="#ff5733" />
               </div>
