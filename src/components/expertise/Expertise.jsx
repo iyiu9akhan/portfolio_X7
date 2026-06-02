@@ -5,6 +5,7 @@ import { IoArrowRedoSharp } from "react-icons/io5";
 import { SiTailwindcss } from "react-icons/si";
 import { IoLogoCss3 } from "react-icons/io5";
 import { SiHtml5 } from "react-icons/si";
+import { DiNodejs } from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io5";
 import { TbBrandJavascript } from "react-icons/tb";
 import { FaReact } from "react-icons/fa";
@@ -66,7 +67,18 @@ function Expertise() {
                   </div>
                 </div>
               </div>
-              <div className="bg-[#F8F5E9] rounded-[10px] flex items-center justify-center"></div>
+              <div className="relative bg-myBG rounded-[15px] p-[4px] overflow-hidden 
+                      transition-all duration-300 origin-center 
+                      before:content-[''] before:absolute before:top-[-50%] before:left-[-50%] before:w-[200%] before:h-[200%] 
+                      before:rounded-full 
+                      
+                    before:bg-[conic-gradient(from_0deg,transparent_0deg,transparent_100deg,rgba(76,176,80,0.7)_100deg,rgba(76,176,80,1)_140deg,rgba(76,176,80,0.7)_180deg,transparent_180deg,transparent_360deg)]
+
+                      before:blur-[19px] before:z-[1] before:animate-[spin_11s_linear_infinite_reverse] before:origin-center">
+                <div className="relative h-full bg-[#F8F5E9] rounded-[11px] flex items-center justify-center z-[2]">
+                <DiNodejs size={190} color="#4CB050" />
+              </div>
+              </div>
               <div className="bg-[#F8F5E9] rounded-[10px] flex items-center justify-center"></div>
               <div className="bg-[#F8F5E9] rounded-[10px] row-span-2"></div>
               <div className="bg-[#F8F5E9] rounded-[10px]"></div>
