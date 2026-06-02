@@ -18,3 +18,7 @@
   --color-myOrange: #FF9D57;
   --color-myBG: #FFFFF0;
 }
+
+html {
+  scroll-behavior: smooth !important;
+}

@@ -15,14 +15,14 @@ import { FaNodeJs } from "react-icons/fa6";
 
 function Banner() {
   return (
-    <div className="bg-myBG pt-[70px] pb-[200px]">
+    <div id="home" className="bg-myBG pt-[220px] pb-[200px]">
       <Container>
         <div className="flex justify-center items-center ">
           <div className="relative before:content-[''] before:absolute before:bottom-0 before:left-[21%] before:w-[45%] before:border-2 before:rounded before:border-[#2E2E2E] before:translate-y-2 select-none">
             <img
               src={banner_img}
               alt="banner_img"
-              className="relative z-[999]"
+              className="relative z-[998]"
             />
             <img
               src={arrow_one}

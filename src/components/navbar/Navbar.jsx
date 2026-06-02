@@ -19,7 +19,7 @@ const navbar_list = [
 
 function Navbar() {
   return (
-    <div className="bg-myBG py-6">
+    <div className="bg-myBG fixed top-0 left-0 w-full z-[999] py-6">
       <Container>
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-5 h-[62px] cursor-pointer">
@@ -64,14 +64,10 @@ function Navbar() {
             <div>
               <ul className="flex gap-5 capitalize text-[#0D2F3F] font-primary font-bold">
                 {navbar_list.map((item) => (
-                  <li className="relative group px-[15px] text-center cursor-pointer">
+                  <li key={item} className="relative group px-[15px] text-center cursor-pointer">
                     <a
-                      href="#"
-                      className="relative inline-block
-             before:absolute before:opacity-0 before:-translate-x-5 before:transition-all before:duration-300
-             after:absolute after:opacity-0 after:translate-x-5 after:transition-all after:duration-300
-             group-hover:before:content-['{'] group-hover:before:opacity-100 group-hover:before:-translate-x-3
-             group-hover:after:content-['}'] group-hover:after:opacity-100 group-hover:after:translate-x-2 group-hover:before:text-myOrange group-hover:after:text-myOrange"
+                      href={`#${item}`}
+                      className="relative inline-block before:content-['{'] before:absolute before:opacity-0 before:scale-50 before:-translate-x-5 before:transition-all before:duration-300 before:ease-in-out after:content-['}'] after:absolute after:opacity-0 after:scale-50 after:translate-x-5 after:transition-all after:duration-300 after:ease-in-out group-hover:before:opacity-100 group-hover:before:scale-100 group-hover:before:-translate-x-3 group-hover:before:text-myOrange group-hover:after:opacity-100 group-hover:after:scale-100 group-hover:after:translate-x-2 group-hover:after:text-myOrange"
                     >
                       {item}
                     </a>

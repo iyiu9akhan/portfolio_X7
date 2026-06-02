@@ -10,12 +10,13 @@ import { FaBootstrap } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { TbBrandJavascript } from "react-icons/tb";
 import { FaReact } from "react-icons/fa";
-
+import { SiExpress } from "react-icons/si";
 import arrow_three from "../../assets/arrow_three.png";
+import express_logo from "../../assets/expertise/express_logo.svg"
 
 function Expertise() {
   return (
-    <div className="pt-[100px] pb-[500px] bg-myBG">
+    <div id="expertise" className="pt-[100px] pb-[500px] bg-myBG">
       <Container>
         <div>
           <div className="flex justify-between items-center relative z-999 mb-[60px]">
@@ -53,11 +54,13 @@ function Expertise() {
                       before:rounded-full before:bg-[conic-gradient(from_0deg,transparent_0deg,transparent_100deg,rgba(240,219,79,0.7)_100deg,rgba(240,219,79,1)_140deg,rgba(240,219,79,0.7)_180deg,transparent_180deg,transparent_360deg)] 
                       before:blur-[19px] before:z-[1] before:animate-[spin_9s_linear_infinite] before:origin-center">
                 <div className="relative w-full h-full bg-[#F8F5E9] rounded-[12px] flex flex-col justify-evenly items-center font-bold cursor-default select-none text-[18px] z-[2]">
+
                   <div className="h-[90px] w-[90px] bg-[#F0DB4F] relative rounded-[11px]">
                     <p className="uppercase text-[50px] font-primary font-bold absolute right-[6px] bottom-[6px] leading-[50px]">
                       js
                     </p>
                   </div>
+
                   <div>
                     <FaReact
                       size={90}
@@ -66,6 +69,7 @@ function Expertise() {
                       style={{ animationDuration: "12s" }}
                     />
                   </div>
+
                 </div>
               </div>
               <div className="relative bg-myBG rounded-[15px] p-[4px] overflow-hidden 
@@ -136,8 +140,30 @@ function Expertise() {
                   <IoLogoCss3 size={90} color="#264de4" />
                 </div>
               </div>
-              <div className="bg-[#F8F5E9] rounded-[10px]"></div>
-              <div className="bg-[#F8F5E9] rounded-[10px] col-span-2"></div>
+              <div className="relative bg-myBG rounded-[15px] p-[4px] overflow-hidden 
+                      transition-all duration-300 origin-center 
+                      before:content-[''] before:absolute before:top-[-50%] before:left-[-50%] before:w-[200%] before:h-[200%] 
+                      before:rounded-full
+                     before:bg-[conic-gradient(from_0deg,transparent_0deg,transparent_100deg,rgba(57,57,57,0.7)_100deg,rgba(57,57,57,1)_140deg,rgba(57,57,57,0.7)_180deg,transparent_180deg,transparent_360deg)]
+                      before:blur-[19px] before:z-[1] before:animate-[spin_11s_linear_infinite] before:origin-center">
+                <div className="relative w-full h-full bg-[#F8F5E9] rounded-[11px] flex items-center justify-center z-[2]">
+                  <SiExpress size={90} color="#393939" />
+                </div>
+              </div>
+              <div className="bg-[#F8F5E9] rounded-[10px] col-span-2 flex flex-col justify-center">
+
+                <div className="flex items-center justify-evenly">
+                  {/* <p className="text-[50px] font-semibold font-primary">express</p> */}
+                  <img src={express_logo} alt="express_logo" className="h-[60px] w-auto object-contain" />
+
+                  <div className="h-[70px] w-[70px] bg-[#F0DB4F] relative rounded-[11px]">
+                    <p className="uppercase text-[50px] font-primary font-bold absolute right-[6px] bottom-[6px] leading-[50px]">
+                      js
+                    </p>
+                  </div>
+                </div>
+
+              </div>
               <div className="bg-[#F8F5E9] rounded-[10px]"></div>
             </div>
           </div>
