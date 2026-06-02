@@ -6,6 +6,7 @@ import { SiTailwindcss } from "react-icons/si";
 import { IoLogoCss3 } from "react-icons/io5";
 import { SiHtml5 } from "react-icons/si";
 import { DiNodejs } from "react-icons/di";
+import { FaBootstrap } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { TbBrandJavascript } from "react-icons/tb";
 import { FaReact } from "react-icons/fa";
@@ -51,7 +52,7 @@ function Expertise() {
                       before:content-[''] before:absolute before:top-[-40%] before:left-[-40%] before:w-[180%] before:h-[180%] 
                       before:rounded-full before:bg-[conic-gradient(from_0deg,transparent_0deg,transparent_100deg,rgba(240,219,79,0.7)_100deg,rgba(240,219,79,1)_140deg,rgba(240,219,79,0.7)_180deg,transparent_180deg,transparent_360deg)] 
                       before:blur-[19px] before:z-[1] before:animate-[spin_9s_linear_infinite] before:origin-center">
-                <div className="relative w-full h-full bg-[#F8F5E9] rounded-[12px] flex flex-col justify-evenly items-center font-bold text-[18px] z-[2]">
+                <div className="relative w-full h-full bg-[#F8F5E9] rounded-[12px] flex flex-col justify-evenly items-center font-bold cursor-default select-none text-[18px] z-[2]">
                   <div className="h-[90px] w-[90px] bg-[#F0DB4F] relative rounded-[11px]">
                     <p className="uppercase text-[50px] font-primary font-bold absolute right-[6px] bottom-[6px] leading-[50px]">
                       js
@@ -76,24 +77,34 @@ function Expertise() {
 
                       before:blur-[19px] before:z-[1] before:animate-[spin_11s_linear_infinite_reverse] before:origin-center">
                 <div className="relative h-full bg-[#F8F5E9] rounded-[11px] flex items-center justify-center z-[2]">
-                <DiNodejs size={190} color="#4CB050" />
+                  <DiNodejs size={190} color="#4CB050" />
+                </div>
               </div>
+
+              <div className="relative bg-myBG rounded-[15px] p-[4px] overflow-hidden 
+                      transition-all duration-300 origin-center 
+                      before:content-[''] before:absolute before:top-[-50%] before:left-[-50%] before:w-[200%] before:h-[200%] 
+                      before:rounded-full
+
+                    before:bg-[conic-gradient(from_0deg,transparent_0deg,transparent_100deg,rgba(119,18,247,0.7)_100deg,rgba(119,18,247,1)_140deg,rgba(119,18,247,0.7)_180deg,transparent_180deg,transparent_360deg)]
+
+                      before:blur-[19px] before:z-[1] before:animate-[spin_10s_linear_infinite] before:origin-center">
+
+                <div className="relative h-full w-full bg-[#F8F5E9] rounded-[11px] flex items-center justify-center z-[2]">
+                  <FaBootstrap color="#7712F7" size={90} />
+                </div>
               </div>
-              <div className="bg-[#F8F5E9] rounded-[10px] flex items-center justify-center"></div>
+
               <div className="bg-[#F8F5E9] rounded-[10px] row-span-2"></div>
               <div className="bg-[#F8F5E9] rounded-[10px]"></div>
-
               <div className="relative bg-myBG rounded-[15px] col-span-2 p-[4px] overflow-hidden 
                       transition-all duration-300 origin-center 
                       before:content-[''] before:absolute before:top-[-100%] before:left-[] before:w-[100%] before:h-[300%] 
-                      before:rounded-full 
-
-                      before:bg-[conic-gradient(from_0deg,transparent_0deg,transparent_100deg,rgba(6,182,212,0.7)_100deg,rgba(6,182,212,1)_140deg,rgba(6,182,212,0.7)_180deg,transparent_180deg,transparent_360deg)]
-
+                      before:rounded-full before:bg-[conic-gradient(from_0deg,transparent_0deg,transparent_100deg,rgba(6,182,212,0.7)_100deg,rgba(6,182,212,1)_140deg,rgba(6,182,212,0.7)_180deg,transparent_180deg,transparent_360deg)]
                       before:blur-[19px] before:z-[1] before:animate-[spin_7s_linear_infinite_reverse] before:origin-center">
-                <div className="relative h-full bg-[#F8F5E9] rounded-[11px]  flex justify-center items-center gap-5 z-[2]">
+                <div className="relative h-full bg-[#F8F5E9] rounded-[11px]  flex justify-center items-center cursor-default select-none gap-5 z-[2]">
                   <div>
-                    <SiTailwindcss color="#06B6D4" size={66} />
+                    <SiTailwindcss color="#06B6D4" size={66} className="mt-2" />
                   </div>
                   <div>
                     <p className="font-primary font-medium text-[66px]">
