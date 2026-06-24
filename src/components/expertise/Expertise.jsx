@@ -43,8 +43,8 @@ function Expertise() {
               </div>
             </div>
             <div className="h-[60px] w-[270px] bg-myOrange rounded-full flex justify-between  items-center cursor-pointer">
-              <div className="h-[52px] w-[185px] bg-myGreen rounded-full flex items-center justify-center ml-[4px]">
-                <p className="capitalize text-white text-[16px] font-primary font-medium">
+              <div className="h-[52px] w-[185px] bg-white rounded-full flex items-center justify-center ml-[4px]">
+                <p className="capitalize text-black text-[16px] font-primary font-medium">
                   explore my expertise
                 </p>
               </div>
@@ -245,7 +245,7 @@ function Expertise() {
 
                     before:rounded-full before:bg-[conic-gradient(from_0deg,transparent_0deg,transparent_100deg,rgba(35,35,35,0.7)_100deg,rgba(35,35,35,1)_140deg,rgba(35,35,35,0.7)_180deg,transparent_180deg,transparent_360deg)]
 
-                      before:blur-[19px] before:z-[1] before:animate-[spin_8s_linear_infinite_reverse] before:origin-center">
+                      before:blur-[19px] before:z-[1] before:animate-[spin_11s_linear_infinite_reverse] before:origin-center">
                 <div className="relative h-full w-full bg-[#F0F0F0] rounded-[11px] flex items-center justify-center z-[2]">
                   <SiNextdotjs size={90} color="#232323" />
                 </div>

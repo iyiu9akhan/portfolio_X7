@@ -36,7 +36,7 @@ function Banner() {
             />
             <div className="absolute top-[130px] -left-[410px]">
               <h2 className="font-logo text-[45px]">Hey ! I am</h2>
-              <h1 className="font-primary capitalize font-bold text-[50px] text-myOrange">
+              <h1 className="font-primary capitalize font-bold text-[50px] bg-gradient-to-r from-[#95ecb0] to-[#00458e] bg-clip-text text-transparent">
                 sameer khan.
               </h1>
               <p className="font-primary text-[#303030] font-medium text-base -mt-3 ">

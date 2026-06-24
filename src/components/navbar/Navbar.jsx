@@ -23,7 +23,7 @@ function Navbar() {
       <Container>
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-5 h-[62px] cursor-pointer">
-            <div className="h-[75px] w-[75px] bg-myGreen rounded-[12px] flex items-center justify-center ">
+            <div className="h-[75px] w-[75px] bg-gradient-to-r from-[#06B6D4] to-[#06B6D4] rounded-[12px] flex items-center justify-center ">
               <p className="font-m text-myBG text-[90px] rotate-[108deg] transform scale-x-[-1] mt-[10px] ml-[10px]">
                 M
               </p>
@@ -47,9 +47,8 @@ function Navbar() {
                 ]}
                 repeat={Infinity}
               />
-
               <span
-                className="ml-3 mb-1 text-myGreen"
+                className="ml-3 mb-1 text-[#06B6D4]"
                 style={{
                   fontSize: "40px",
                   fontFamily: "Noto Sans Georgian",

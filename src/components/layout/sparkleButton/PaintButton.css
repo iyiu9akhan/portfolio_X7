@@ -8,12 +8,13 @@
   padding: 16px 32px;
   font-size: 1rem;
   font-weight: bold;
-  background: var(--color-myGreen);
+  /* background: var(--color-myGreen); */
+  background: linear-gradient(to right, #06B6D4, #06B6D4);
   color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
   overflow: visible;
 }
 .paint-button .errorPage {
@@ -29,7 +30,8 @@
   bottom: 0;
   width: 10px;
   height: 0;
-  background: var(--color-myGreen);
+  /* background: var(--color-myGreen); */
+  background: linear-gradient(to right, #06B6D4, #06B6D4);
   border-radius: 0 0 10px 10px;
   animation: drip-fall 4s infinite ease-in;
   z-index: 5;
@@ -75,8 +77,23 @@
     opacity: 0;
   }
 }
-.drip-1 { left: 15%; animation-delay: 0s; }
-.drip-2 { left: 50%; animation-delay: 1s; }
-.drip-3 { left: 85%; animation-delay: 2s; }
-.drip-4 { left: 35%; animation-delay: 3s; }
-.drip-5 { left: 65%; animation-delay: 4s; }
+.drip-1 {
+  left: 15%;
+  animation-delay: 0s;
+}
+.drip-2 {
+  left: 50%;
+  animation-delay: 1s;
+}
+.drip-3 {
+  left: 85%;
+  animation-delay: 2s;
+}
+.drip-4 {
+  left: 35%;
+  animation-delay: 3s;
+}
+.drip-5 {
+  left: 65%;
+  animation-delay: 4s;
+}
