@@ -19,7 +19,7 @@ const navbar_list = [
 
 function Navbar() {
   return (
-    <div className="bg-myBG fixed top-0 left-0 w-full z-[999] py-6">
+    <div className="bg-myBG fixed z-[999] top-0 left-0 w-full py-6">
       <Container>
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-5 h-[62px] cursor-pointer">
