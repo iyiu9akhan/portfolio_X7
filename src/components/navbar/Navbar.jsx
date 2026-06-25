@@ -6,8 +6,10 @@ import Button from "../layout/button";
 import { TypeAnimation } from "react-type-animation";
 import PaintButton from "../layout/sparkleButton/PaintButton";
 // import SparkleButton from "../layout/sparkleButton/PaintButton";
-const CURSOR_CLASS_NAME = "custom-type-animation-cursor";
+import expertiseIcon from "../../assets/expertise_one.png";
 
+
+const CURSOR_CLASS_NAME = "custom-type-animation-cursor";
 const navbar_list = [
   "home",
   "expertise",
@@ -19,71 +21,88 @@ const navbar_list = [
 
 function Navbar() {
   return (
-    <div className="bg-myBG fixed z-[999] top-0 left-0 w-full py-6">
-      <Container>
-        <div className="flex justify-between items-center">
-          <div className="flex items-center gap-5 h-[62px] cursor-pointer">
-            <div className="h-[75px] w-[75px] bg-gradient-to-r from-[#06B6D4] to-[#06B6D4] rounded-[12px] flex items-center justify-center ">
+
+    <div>
+      <div className="bg-myBG fixed z-[995] top-0 left-0 w-full py-2">
+        <Container>
+          <div className="flex justify-between items-center">
+            <div className="flex items-center gap-5 h-[62px] cursor-pointer">
+
+              {/* m icon logo anchored here */}
+
+              {/* <div className="h-[75px] w-[75px] bg-gradient-to-r from-[#30c5d2] to-[#30c5d2] rounded-[12px] flex items-center justify-center ">
               <p className="font-m text-myBG text-[90px] rotate-[108deg] transform scale-x-[-1] mt-[10px] ml-[10px]">
                 M
               </p>
-            </div>
-            <div className="flex items-center h-full font-logo">
-              <TypeAnimation
-                cursor={false}
-                style={{
-                  fontSize: "60px",
-                  lineHeight: "60px",
-                }}
-                className={CURSOR_CLASS_NAME}
-                sequence={[
-                  "sameer",
-                  800,
-                  "sameerkhan",
-                  (el) => el.classList.remove(CURSOR_CLASS_NAME),
-                  6000,
-                  (el) => el.classList.add(CURSOR_CLASS_NAME),
-                  "",
-                ]}
-                repeat={Infinity}
-              />
-              <span
-                className="ml-3 mb-1 text-[#06B6D4]"
-                style={{
-                  fontSize: "40px",
-                  fontFamily: "Noto Sans Georgian",
-                  lineHeight: "72px",
-                }}
-              >
-                ;
-              </span>
-            </div>
-          </div>
-          <div className="flex items-center gap-10">
-            <div>
-              <ul className="flex gap-5 capitalize text-[#0D2F3F] font-primary font-bold">
-                {navbar_list.map((item) => (
-                  <li key={item} className="relative group px-[15px] text-center cursor-pointer">
-                    <a
-                      href={`#${item}`}
-                      className="relative inline-block before:content-['{'] before:absolute before:opacity-0 before:scale-50 before:-translate-x-5 before:transition-all before:duration-300 before:ease-in-out after:content-['}'] after:absolute after:opacity-0 after:scale-50 after:translate-x-5 after:transition-all after:duration-300 after:ease-in-out group-hover:before:opacity-100 group-hover:before:scale-100 group-hover:before:-translate-x-3 group-hover:before:text-myOrange group-hover:after:opacity-100 group-hover:after:scale-100 group-hover:after:translate-x-2 group-hover:after:text-myOrange"
-                    >
-                      {item}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            </div> */}
 
-            <div className="nav-actions">
-              <PaintButton className="text-primary">
-                Let's Collaborate
-              </PaintButton>
+              {/* m icon logo released here  */}
+
+              <img
+                src={expertiseIcon}
+                alt="heading_icon"
+                className="h-[66px]"
+              />
+
+              <div className="flex items-center h-full font-logo">
+                <TypeAnimation
+                  cursor={false}
+                  style={{
+                    fontSize: "60px",
+                    lineHeight: "60px",
+                  }}
+                  className={CURSOR_CLASS_NAME}
+                  sequence={[
+                    "sameer",
+                    800,
+                    "sameerkhan",
+                    (el) => el.classList.remove(CURSOR_CLASS_NAME),
+                    6000,
+                    (el) => el.classList.add(CURSOR_CLASS_NAME),
+                    "",
+                  ]}
+                  repeat={Infinity}
+                />
+                <span
+                  className="ml-3 mb-1 text-[#00959B]"
+                  style={{
+                    fontSize: "40px",
+                    fontFamily: "Noto Sans Georgian",
+                    lineHeight: "72px",
+                  }}
+                >
+                  ;
+                </span>
+              </div>
+            </div>
+            <div className="flex items-center gap-10">
+              <div>
+                <ul className="flex gap-5 capitalize text-[#0D2F3F] font-primary font-bold">
+                  {navbar_list.map((item) => (
+                    <li key={item} className="relative group px-[15px] text-center cursor-pointer">
+                      <a
+                        href={`#${item}`}
+                        className="relative inline-block before:content-['{'] before:absolute before:opacity-0 before:scale-50 before:-translate-x-5 before:transition-all before:duration-300 before:ease-in-out after:content-['}'] after:absolute after:opacity-0 after:scale-50 after:translate-x-5 after:transition-all after:duration-300 after:ease-in-out group-hover:before:opacity-100 group-hover:before:scale-100 group-hover:before:-translate-x-3 group-hover:before:text-myOrange group-hover:after:opacity-100 group-hover:after:scale-100 group-hover:after:translate-x-2 group-hover:after:text-myOrange"
+                      >
+                        {item}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="nav-actions">
+                <PaintButton className="text-primary">
+                  Let's Collaborate
+                </PaintButton>
+              </div>
             </div>
           </div>
-        </div>
-      </Container>
+        </Container>
+      </div>
+      <div className="fixed w-full h-19 top-0 shadow-xl shadow-gray-100"></div>
     </div>
+
   );
 }
 

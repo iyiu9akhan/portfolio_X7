@@ -12,17 +12,20 @@ import { SiMongodb } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa6";
+// import bannerBG1 from "../../assets/bannerBG1.jpg"
+// import bannerBG2 from "../../assets/bannerBG2.jpg"
 
 function Banner() {
   return (
-    <div id="home" className="bg-myBG pt-[220px] pb-[200px]">
+    <div id="home" className="bg-[url('/bannerBG1.jpg')] bg-cover bg-center bg-no-repeat pt-[220px] pb-[300px] z-[999]">
+      <div className="absolute inset-0 bg-white/60 mb-[53px]"></div>
       <Container>
         <div className="flex justify-center items-center ">
           <div className="relative before:content-[''] before:absolute before:bottom-0 before:left-[21%] before:w-[45%] before:border-2 before:rounded before:border-[#2E2E2E] before:translate-y-2 select-none">
             <img
               src={banner_img}
               alt="banner_img"
-              className="relative z-[998]"
+              className="relative z-[990]"
             />
             <img
               src={arrow_one}
@@ -36,7 +39,7 @@ function Banner() {
             />
             <div className="absolute top-[130px] -left-[410px]">
               <h2 className="font-logo text-[45px]">Hey ! I am</h2>
-              <h1 className="font-primary capitalize font-bold text-[50px] bg-gradient-to-r from-[#95ecb0] to-[#00458e] bg-clip-text text-transparent">
+              <h1 className="font-primary capitalize font-bold text-[50px] bg-gradient-to-r from-[#30c5d2] to-[#00458e] bg-clip-text text-transparent">
                 sameer khan.
               </h1>
               <p className="font-primary text-[#303030] font-medium text-base -mt-3 ">
@@ -44,15 +47,15 @@ function Banner() {
               </p>
             </div>
             <div className="absolute bottom-[10px] -right-[415px] w-[400px]">
-              <p className="font-primary font-medium text-base text-justify leading-6.5">
-                <span className="text-myOrange font-black text-[29px] leading-0">
+              <p className="font-primary font-medium text-[17px] text-justify leading-6.5">
+                <span className="text-myOrange font-black text-[25px]">
                   "
                 </span>
-                In Progress : MERN Stack Developer | Currently mastering the
+                &nbsp; In Progress : MERN Stack Developer || Currently mastering the
                 MERN stack through hands-on projects using React, Node, Express
-                & MongoDB | Cloud enthusiast | Turning ideas into seamless
-                digital experiences.
-                <span className="text-myOrange font-black text-[29px] leading-0">
+                & MongoDB || Logic enthusiast || Turning ideas into seamless
+                digital experiences. &nbsp;
+                <span className="text-myOrange font-black text-[25px]">
                   "
                 </span>
               </p>
@@ -104,22 +107,22 @@ function Banner() {
                 </a>
               </div>
             </div>{" "}
-            <div className="absolute -left-[260px] -bottom-[80px] flex justify-between gap-3 items-center">
+            <div className="absolute -left-[280px] -bottom-[80px] flex justify-between gap-3 items-center">
                 <a href="#">
                   <SiMongodb
-                    size={40}
+                    size={50}
                     className="text-[#3FA037] cursor-pointer"
                   />
                 </a>
                 <a href="https://github.com/iyiu9akhan" target="_blank">
                   <SiExpress
-                    size={40}
+                    size={50}
                     className="cursor-pointer text-[#303030]"
                   />
                 </a>
                 <a href="https://x.com/iyiu9akhan" target="_blank">
                   <FaReact
-                    size={40}
+                    size={50}
                     className="cursor-pointer  text-[#61DBFB]"
                   />
                 </a>
@@ -128,7 +131,7 @@ function Banner() {
                   target="_blank"
                 >
                   <FaNodeJs
-                    size={40}
+                    size={50}
                     className="text-[#68A063] cursor-pointer"
                   />
                 </a>
