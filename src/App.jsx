@@ -34,7 +34,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <Navbar/>
       <Banner/>
       <Expertise/>
       {/* <ErrorPage></ErrorPage> */}

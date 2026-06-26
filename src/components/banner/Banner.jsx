@@ -17,8 +17,8 @@ import { FaNodeJs } from "react-icons/fa6";
 
 function Banner() {
   return (
-    <div id="home" className="bg-[url('/bannerBG1.jpg')] bg-cover bg-center bg-no-repeat pt-[220px] pb-[300px] z-[999]">
-      <div className="absolute inset-0 bg-white/60 mb-[53px]"></div>
+    <div id="home" className="bg-[url('/bannerBG1.jpg')] min-h-screen bg-cover bg-center bg-no-repeat pt-[220px] z-[999]">
+      <div className="absolute inset-0 min-h-full bg-white/60 mb-[53px]"></div>
       <Container>
         <div className="flex justify-center items-center ">
           <div className="relative before:content-[''] before:absolute before:bottom-0 before:left-[21%] before:w-[45%] before:border-2 before:rounded before:border-[#2E2E2E] before:translate-y-2 select-none">

@@ -16,7 +16,7 @@ const navbar_list = [
   "projects",
   "experiences",
   "insights",
-  "contact",
+  "resume"
 ];
 
 function Navbar() {
