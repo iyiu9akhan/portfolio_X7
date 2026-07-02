@@ -18,10 +18,10 @@ const navbar_list = [
   "insights",
   "resume"
 ];
+const resume_link = "https://drive.google.com/drive/folders/1PAmRzjp1o2ItV8TMPrbKIMzXjUPZw_Vv?usp=sharing"
 
 function Navbar() {
   return (
-
     <div>
       <div className="bg-myBG fixed z-[995] top-0 left-0 w-full py-2">
         <Container>
@@ -78,16 +78,21 @@ function Navbar() {
             <div className="flex items-center gap-10">
               <div>
                 <ul className="flex gap-5 capitalize text-[#0D2F3F] font-primary font-bold">
-                  {navbar_list.map((item) => (
-                    <li key={item} className="relative group px-[15px] text-center cursor-pointer">
-                      <a
-                        href={`#${item}`}
-                        className="relative inline-block before:content-['{'] before:absolute before:opacity-0 before:scale-50 before:-translate-x-5 before:transition-all before:duration-300 before:ease-in-out after:content-['}'] after:absolute after:opacity-0 after:scale-50 after:translate-x-5 after:transition-all after:duration-300 after:ease-in-out group-hover:before:opacity-100 group-hover:before:scale-100 group-hover:before:-translate-x-3 group-hover:before:text-myOrange group-hover:after:opacity-100 group-hover:after:scale-100 group-hover:after:translate-x-2 group-hover:after:text-myOrange"
-                      >
-                        {item}
-                      </a>
-                    </li>
-                  ))}
+                  {navbar_list.map((item) => {
+                    const isResume = item === "resume";
+                    return (
+                      <li key={item} className="relative group px-[15px] text-center cursor-pointer">
+                        <a
+                          href={isResume ? resume_link : `#${item}`}
+                          target={isResume ? "_blank" : undefined}
+                          rel={isResume ? "error" : undefined}
+                          className="relative inline-block before:content-['{'] before:absolute before:opacity-0 before:scale-50 before:-translate-x-5 before:transition-all before:duration-300 before:ease-in-out after:content-['}'] after:absolute after:opacity-0 after:scale-50 after:translate-x-5 after:transition-all after:duration-300 after:ease-in-out group-hover:before:opacity-100 group-hover:before:scale-100 group-hover:before:-translate-x-3 group-hover:before:text-myOrange group-hover:after:opacity-100 group-hover:after:scale-100 group-hover:after:translate-x-2 group-hover:after:text-myOrange"
+                        >
+                          {item}
+                        </a>
+                      </li>
+                    )
+                  })}
                 </ul>
               </div>
 
