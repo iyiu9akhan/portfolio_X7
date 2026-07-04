@@ -101,7 +101,6 @@ function Expertise() {
                     before:bg-[conic-gradient(from_0deg,transparent_0deg,transparent_100deg,rgba(119,18,247,0.7)_100deg,rgba(119,18,247,1)_140deg,rgba(119,18,247,0.7)_180deg,transparent_180deg,transparent_360deg)]
 
                       before:blur-[19px] before:z-[1] before:animate-[spin_10s_linear_infinite] before:origin-center">
-
                 <div className="relative h-full w-full bg-[#F4EEFF] rounded-[11px] flex items-center justify-center z-[2]">
                   <FaBootstrap color="#7712F7" size={90} />
                 </div>
