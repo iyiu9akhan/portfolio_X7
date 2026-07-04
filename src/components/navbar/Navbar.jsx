@@ -5,7 +5,6 @@ import logo_two from "../../assets/logo_two.png";
 import Button from "../layout/button";
 import { TypeAnimation } from "react-type-animation";
 import PaintButton from "../layout/sparkleButton/PaintButton";
-// import SparkleButton from "../layout/sparkleButton/PaintButton";
 import expertiseIcon from "../../assets/expertise_one.png";
 
 
@@ -95,7 +94,6 @@ function Navbar() {
                   })}
                 </ul>
               </div>
-
               <div className="nav-actions">
                 <PaintButton className="text-primary">
                   Let's Collaborate
@@ -107,7 +105,6 @@ function Navbar() {
       </div>
       <div className="fixed w-full h-19 top-0 shadow-xl shadow-gray-100"></div>
     </div>
-
   );
 }
 
