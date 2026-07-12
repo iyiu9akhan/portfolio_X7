@@ -23,7 +23,7 @@ import { SiMongoose } from "react-icons/si";
 
 function Expertise() {
   return (
-    <div id="expertise" className="pt-[80px] pb-[100px] bg-myBG">
+    <div id="expertise" className="pt-[120px] pb-[100px] bg-myBG">
       <Container>
         <div>
           <div className="flex justify-between items-center relative mb-[40px]">
