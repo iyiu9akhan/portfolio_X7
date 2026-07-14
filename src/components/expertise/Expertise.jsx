@@ -51,7 +51,7 @@ function Expertise() {
               <div className="h-[46px] w-[46px] bg-myBG rounded-full mr-[7px] flex items-center justify-center">
                 <IoArrowRedoSharp size={25} color="black" />
               </div>
-            </div>
+            </div> 
           </div>
           <div>
             <div className="grid gap-[10px] w-full grid-cols-5 auto-rows-[200px]">
@@ -259,3 +259,4 @@ function Expertise() {
 }
 
 export default Expertise;
+
