@@ -7,6 +7,7 @@ import Expertise from "./components/expertise/Expertise";
 // import ShinyText from '../reactBiteAnimation/ShinyText/ShinyText'
 import { useEffect } from "react";
 import Notice from "./components/layout/notice/Notice"
+import Experiences from "./components/experiences/Experiences";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -36,6 +37,7 @@ function App() {
       <Navbar/>
       <Banner/>
       <Expertise/>
+      <Experiences/>
       <Notice/>
       {/* <ErrorPage></ErrorPage> */}
     </>

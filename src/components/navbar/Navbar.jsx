@@ -13,7 +13,7 @@ const navbar_list = [
   "home",
   "expertise",
   "projects",
-  "experiences",
+  // "experiences",
   "insights",
   "resume"
 ];
